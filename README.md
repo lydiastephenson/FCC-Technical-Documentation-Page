@@ -2,6 +2,8 @@
 
 Objective: Build an app that is functionally similar to <https://technical-documentation-page.freecodecamp.rocks>
 
+Final Project: <https://fcc-technical-documentation-page--lydia-stephenson.repl.co/>
+
 ## User Stories:
 
 1. You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
