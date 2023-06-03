@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tilt+Neon&display=swap');
+
+:root {
+    --light-color: #DAD2D8;
+    --dark-color: #143642;
+    --f1--color: #0F8B8D;
+    --f2--color: #EC9A29;
+    --f3--color: #A8201A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+    background-color: var(--light-color);
+}
+
+h1, section header {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+h1 a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* NAV BAR STYLES */
+
+.container {
+    display: flex;
+}
+
+nav {
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--dark-color);
+}
+
+nav header {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--f2--color);
+}
+
+nav ul li a:hover {
+    color: var(--f1--color);
+}
+
+main {
+    margin-left: 15%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    nav ul {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/* MAIN STYLES */
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+section header {
+    font-size: 20px;
+    padding: 10px 0;
+    color: var(--f3--color);
+}
+
+section div > * {
+    padding: 10px 0;
+}
+
+section div ul {
+    padding-left: 20px;
+}
+
+section div ul li::before {
+    content: '\2022';
+    color: var(--f2--color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+section div code {
+    color: white;
+    background-color: black;
+    display: block;
+    padding: 20px;
+    overflow-x: scroll;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.annotation {
+    color: var(--f2--color);
+}
